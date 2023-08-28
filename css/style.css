@@ -93,9 +93,46 @@ img{
 #todo-list{
     font-size: 1.2em;
     margin-bottom: 10px;
+    list-style-type: none;
 }
 #quote{
     font-size: 1.2em;
     color: #ddd;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* 반응형 */
+/* 1400px */
+@media screen and (max-width:1400px){
+    #content{
+        padding-top: 35%;
+    }
+}
+@media screen and (max-width:1024px){
+    #content{
+        padding: 0;
+        padding-top: 45%;
+    }
+}
+@media screen and (max-width:768px){
+    #content{
+        padding-top: 60%;
+    }
+}
+@media screen and (max-width:500px){
+    #content{
+        /* padding: 5%; */
+        padding-top: 70%;
+    }
+    #content form:nth-child(1){
+        margin-bottom: 20%;
+    }
+    #clock{
+        font-size: 4em;
+    }
 }
